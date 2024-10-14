@@ -54,3 +54,7 @@ Steps for the project Setup
 - After closing do yarn or yarn install to install all the dependencies in your local
 - Then run yarn dev or npm run dev to start the local server
 - By running the above command local host will be automatically opened in browser bzc of the vite config
+
+Usefull links for react-recoil
+
+- https://recoiljs.org/docs/api-reference/core/useRecoilValue
