@@ -1,11 +1,12 @@
 import "./App.css";
 import { RecoilRoot } from "recoil";
+import TodoContainer from "./pages/TodoContainer";
 
 function App() {
   return (
     <>
       <RecoilRoot>
-        <h3>react recoil</h3>
+        <TodoContainer />
       </RecoilRoot>
     </>
   );
