@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useRecoilState, useResetRecoilState } from "recoil";
 import DeleteIcon from "@mui/icons-material/Delete";
-import EditIcon from "@mui/icons-material/Edit";
 import { todosState } from "../recoil/recoilAtom";
 import { ListOfAllTodoHeader } from "./ListOfAllTodoHeader";
+import { EditTodoPanel } from "./EditTodoPanel";
 
 interface todosProps {
   id: string;
@@ -40,9 +40,7 @@ export const ListAllTodos = () => {
                 }}
               >
                 <p style={{ margin: "0.28rem" }}>{todo}</p>
-                <button>
-                  <EditIcon />
-                </button>
+                <EditTodoPanel currentTodo={todo} selectId={id} />
                 <button
                   style={{ marginLeft: "0.25rem" }}
                   onClick={() => handleDeleteTodo(id)}
